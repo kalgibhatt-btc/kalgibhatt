@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+<head>
+<title>Sunday</title>
+<script type="text/javascript">
+	function sunday()
+	{
+		var i=new Number();
+		var list=new String();
+		for(i=2017;i<2050;i++)
+		{
+			var date = new Date(i,0,1);
+			if(date.getDay()==0)
+			{
+				document.write(i.toString()+"<br/>");
+				//list=list+i.toString()+"<br/>";
+			}		
+		}
+		document.getElementById("a").innerHTML=list;
+	}
+	</script>
+</head>
+<body>
+	<form>
+	
+	<p id="a"></p>
+	<input type="button" value="click" name="button" onclick="sunday()"/>	
+</form>
+</body>
+</html>
